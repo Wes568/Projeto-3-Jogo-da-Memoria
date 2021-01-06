@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    background: #808080;
+}
+
+#classboard{
+    width: 1200px;
+    height: 700px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memorycard{
+    width: 290px;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+}
+
+.memorycard:active{
+    transform:scale(0.97);
+}
+
+.memorycard.flip{
+    transform: rotateY(180deg);
+}
+
+.frontface{
+   
+    background: #675a10;
+    position: absolute;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+.backface{
+    
+    background: #675a10;
+    position: relative;
+    border-radius: 10px;
+}
